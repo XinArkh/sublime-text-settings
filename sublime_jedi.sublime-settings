@@ -1,0 +1,4 @@
+{
+    "enable_in_sublime_repl": true,
+    "only_complete_after_regex": ".",
+}
