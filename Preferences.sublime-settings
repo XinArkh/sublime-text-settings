@@ -14,4 +14,7 @@
     "font_size": 11,
     "auto_complete_commit_on_tab": true,
     "theme": "auto",
+
+    "show_encoding": true,
+    "show_line_endings": true,
 }
