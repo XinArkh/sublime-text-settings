@@ -1,6 +1,9 @@
 [
+    // 将tab切换的方式改为tab键风格
     { "keys": ["ctrl+tab"], "command": "next_view" },
     { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+    // 用于SublimeREPL插件，唤出REPL窗口
     {
         "keys": ["ctrl+`"],
         "caption": "SublimeREPL: Python",
@@ -9,5 +12,15 @@
             "id": "repl_python",
             "file": "config/Python/Main.sublime-menu",
         },
+    },
+
+    // windows系统中默认的ctrl+space键被占用，替换为alt+space
+    // 唤出补全菜单
+    { "keys": ["alt+space"], "command": "auto_complete", "arg": { "commit_single": false } },
+    // 在补全菜单中切换下一条
+    { "keys": ["alt+space"], "command": "move", "args": { "by": "lines", "forward": true }, "context":
+        [
+            { "key": "auto_complete_visible", "operator": "equal", "operand": true }
+        ]
     },
 ]
