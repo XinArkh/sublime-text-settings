@@ -1,0 +1,23 @@
+{
+    "common_flags" : [
+        // c include paths
+        "-ID:/dev/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+        "-ID:/dev/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+        "-ID:/dev/mingw-w64/mingw64/x86_64-w64-mingw32/include",
+        // cpp include paths
+        "-ID:/dev/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+        "-ID:/dev/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+        "-ID:/dev/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+    ],
+    "flags_sources": [
+        {
+            "file": "CMakeLists.txt",
+            "flags": ["-G MinGW Makefiles"]
+        },
+        {"file": "compile_commands.json"},
+        {"file": "CppProperties.json"},
+        {"file": "c_cpp_properties.json"},
+        {"file": ".clang_complete"},
+    ],
+    // "verbose" : true,
+}
