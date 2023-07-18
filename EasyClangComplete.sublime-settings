@@ -12,7 +12,7 @@
     "flags_sources": [
         {
             "file": "CMakeLists.txt",
-            "flags": ["-G MinGW Makefiles"]
+            "flags": ["-GMinGW Makefiles"]
         },
         {"file": "compile_commands.json"},
         {"file": "CppProperties.json"},
